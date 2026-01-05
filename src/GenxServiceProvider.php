@@ -12,6 +12,7 @@ use Illuminate\Database\Migrations\MigrationCreator;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
+use Zen\Modulr\Events\ControllerPromptsCollecting;
 
 final class GenxServiceProvider extends ServiceProvider
 {
@@ -45,15 +46,15 @@ final class GenxServiceProvider extends ServiceProvider
    *
    * @codeCoverageIgnore
    */
-  protected function registerEventListeners(): void
+  private function registerEventListeners(): void
   {
     // Only register if modulr is installed
-    if (! class_exists(\Zen\Modulr\Events\ControllerPromptsCollecting::class)) {
+    if (! class_exists(ControllerPromptsCollecting::class)) {
       return;
     }
 
     Event::listen(
-      \Zen\Modulr\Events\ControllerPromptsCollecting::class,
+      ControllerPromptsCollecting::class,
       ControllerPromptsListener::class
     );
   }
