@@ -1,0 +1,8 @@
+<?php
+
+{{ strictTypes }}
+namespace {{ namespace }};
+
+use Illuminate\Database\Eloquent\Relations\Pivot;
+
+{{ finalClass }} {{ class }} extends Pivot {}

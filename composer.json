@@ -1,0 +1,91 @@
+{
+  "$schema": "https://getcomposer.org/schema.json",
+  "name": "druidweb/genx",
+  "description": "A console generator/stubs package for the Druid Laravel starter kit.",
+  "keywords": [
+    "laravel",
+    "druid",
+    "stubs",
+    "generators",
+    "zen"
+  ],
+  "authors": [
+    {
+      "name": "JetStream Labs",
+      "email": "hello@jetstreamlabs.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^8.4",
+    "laravel/framework": "^12.41.1",
+    "nesbot/carbon": "^3.11.0",
+    "symfony/console": "^7.4.0",
+    "symfony/http-kernel": "^7.4.0",
+    "symfony/polyfill-php84": "^1.33.0"
+  },
+  "require-dev": {
+    "driftingly/rector-laravel": "^2.1.6",
+    "larastan/larastan": "^3.8.0",
+    "orchestra/testbench": "^10.8.0",
+    "pestphp/pest": "^4.1.6",
+    "pestphp/pest-plugin-laravel": "^4.0",
+    "pestphp/pest-plugin-type-coverage": "^4.0.3",
+    "rector/rector": "^2.2.11",
+    "spatie/laravel-route-discovery": "^1.4",
+    "zenphp/fixr": "^1.0.4",
+    "zenphp/modulr": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Druid\\Genx\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "lint": [
+      "./vendor/bin/rector",
+      "./vendor/bin/fixr"
+    ],
+    "test:types": "./vendor/bin/pest --type-coverage --parallel --min=100",
+    "test:lint": [
+      "./vendor/bin/rector --dry-run",
+      "./vendor/bin/fixr --test"
+    ],
+    "test:feat": "./vendor/bin/pest",
+    "test:coverage": [
+      "./vendor/bin/pest --coverage --min=100.0 --coverage-clover=coverage.xml",
+      "@php bin/clean-coverage"
+    ],
+    "test:static": "./vendor/bin/phpstan analyze",
+    "test": [
+      "@test:types",
+      "@test:static",
+      "@test:lint",
+      "@test:types",
+      "@test:feat"
+    ]
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Druid\\Genx\\GenxServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

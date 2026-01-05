@@ -1,0 +1,16 @@
+<?php
+
+{{ strictTypes }}
+namespace {{ namespace }};
+
+use Illuminate\Http\Request;
+use Spatie\RouteDiscovery\Attributes\Route;
+
+{{ finalClass }} {{ class }}
+{
+  /**
+   * Handle the incoming request.
+   */
+  #[Route('{{ route }}', name: '{{ routeName }}', middleware: [{{ middleware }}])]
+  public function __invoke(Request $request) {}
+}

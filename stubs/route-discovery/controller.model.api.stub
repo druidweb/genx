@@ -1,0 +1,41 @@
+<?php
+
+{{ strictTypes }}
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use {{ namespacedRequests }};
+use Spatie\RouteDiscovery\Attributes\Route;
+
+{{ finalClass }} {{ class }}
+{
+  /**
+   * Display a listing of the resource.
+   */
+  #[Route(fullUri: '{{ route }}', name: '{{ routeName }}.index', middleware: [{{ middleware }}])]
+  public function index() {}
+
+  /**
+   * Store a newly created resource in storage.
+   */
+  #[Route(fullUri: '{{ route }}', name: '{{ routeName }}.store', middleware: [{{ middleware }}])]
+  public function store({{ storeRequest }} $request) {}
+
+  /**
+   * Display the specified resource.
+   */
+  #[Route(fullUri: '{{ route }}/{{{ modelVariable }}}', name: '{{ routeName }}.show', middleware: [{{ middleware }}])]
+  public function show({{ model }} ${{ modelVariable }}) {}
+
+  /**
+   * Update the specified resource in storage.
+   */
+  #[Route(fullUri: '{{ route }}/{{{ modelVariable }}}', name: '{{ routeName }}.update', middleware: [{{ middleware }}])]
+  public function update({{ updateRequest }} $request, {{ model }} ${{ modelVariable }}) {}
+
+  /**
+   * Remove the specified resource from storage.
+   */
+  #[Route(fullUri: '{{ route }}/{{{ modelVariable }}}', name: '{{ routeName }}.destroy', middleware: [{{ middleware }}])]
+  public function destroy({{ model }} ${{ modelVariable }}) {}
+}

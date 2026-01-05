@@ -1,0 +1,42 @@
+<?php
+
+{{ strictTypes }}
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use {{ namespacedParentModel }};
+use Illuminate\Http\Request;
+use Spatie\RouteDiscovery\Attributes\Route;
+
+{{ finalClass }} {{ class }}
+{
+  /**
+   * Store the newly created resource in storage.
+   */
+  #[Route(fullUri: '{{ route }}/{{{ parentModelVariable }}}', name: '{{ routeName }}.store', middleware: [{{ middleware }}])]
+  public function store(Request $request, {{ parentModel }} ${{ parentModelVariable }}): never
+  {
+    abort(404);
+  }
+
+  /**
+   * Display the resource.
+   */
+  #[Route(fullUri: '{{ route }}/{{{ parentModelVariable }}}', name: '{{ routeName }}.show', middleware: [{{ middleware }}])]
+  public function show({{ parentModel }} ${{ parentModelVariable }}) {}
+
+  /**
+   * Update the resource in storage.
+   */
+  #[Route(fullUri: '{{ route }}/{{{ parentModelVariable }}}', name: '{{ routeName }}.update', middleware: [{{ middleware }}])]
+  public function update(Request $request, {{ parentModel }} ${{ parentModelVariable }}) {}
+
+  /**
+   * Remove the resource from storage.
+   */
+  #[Route(fullUri: '{{ route }}/{{{ parentModelVariable }}}', name: '{{ routeName }}.destroy', middleware: [{{ middleware }}])]
+  public function destroy({{ parentModel }} ${{ parentModelVariable }}): never
+  {
+    abort(404);
+  }
+}

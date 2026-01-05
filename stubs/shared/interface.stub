@@ -1,0 +1,7 @@
+<?php
+
+{{ strictTypes }}
+namespace {{ namespace }};
+
+interface {{ class }} {}
+

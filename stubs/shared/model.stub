@@ -1,0 +1,12 @@
+<?php
+
+{{ strictTypes }}
+namespace {{ namespace }};
+
+{{ factoryImport }}
+use Illuminate\Database\Eloquent\Model;
+
+{{ finalClass }} {{ class }} extends Model
+{
+  {{ factory }}
+}

@@ -1,0 +1,37 @@
+<?php
+
+{{ strictTypes }}
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use {{ namespacedParentModel }};
+use Illuminate\Http\Request;
+
+{{ finalClass }} {{ class }}
+{
+  /**
+   * Store the newly created resource in storage.
+   */
+  public function store(Request $request, {{ parentModel }} ${{ parentModelVariable }}): never
+  {
+    abort(404);
+  }
+
+  /**
+   * Display the resource.
+   */
+  public function show({{ parentModel }} ${{ parentModelVariable }}) {}
+
+  /**
+   * Update the resource in storage.
+   */
+  public function update(Request $request, {{ parentModel }} ${{ parentModelVariable }}) {}
+
+  /**
+   * Remove the resource from storage.
+   */
+  public function destroy({{ parentModel }} ${{ parentModelVariable }}): never
+  {
+    abort(404);
+  }
+}

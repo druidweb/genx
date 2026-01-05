@@ -1,0 +1,7 @@
+.DS_Store
+.vscode/
+vendor/
+node_modules/
+composer.lock
+bun.lock
+AGENT.md

@@ -1,0 +1,23 @@
+<?php
+
+{{ strictTypes }}
+namespace {{ namespace }};
+
+use {{ eventNamespace }};
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Queue\InteractsWithQueue;
+
+{{ finalClass }} {{ class }} implements ShouldQueue
+{
+	use InteractsWithQueue;
+
+	/**
+	 * Create the event listener.
+	 */
+	public function __construct() {}
+
+	/**
+	 * Handle the event.
+	 */
+	public function handle({{ event }} $event): void {}
+}

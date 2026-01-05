@@ -1,0 +1,40 @@
+<?php
+
+{{ strictTypes }}
+namespace {{ namespace }};
+
+use Illuminate\Http\Request;
+use Spatie\RouteDiscovery\Attributes\Route;
+
+{{ finalClass }} {{ class }}
+{
+  /**
+   * Display a listing of the resource.
+   */
+  #[Route(fullUri: '{{ route }}', name: '{{ routeName }}.index', middleware: [{{ middleware }}])]
+  public function index() {}
+
+  /**
+   * Store a newly created resource in storage.
+   */
+  #[Route(fullUri: '{{ route }}', name: '{{ routeName }}.store', middleware: [{{ middleware }}])]
+  public function store(Request $request) {}
+
+  /**
+   * Display the specified resource.
+   */
+  #[Route(fullUri: '{{ route }}/{id}', name: '{{ routeName }}.show', middleware: [{{ middleware }}])]
+  public function show(string $id) {}
+
+  /**
+   * Update the specified resource in storage.
+   */
+  #[Route(fullUri: '{{ route }}/{id}', name: '{{ routeName }}.update', middleware: [{{ middleware }}])]
+  public function update(Request $request, string $id) {}
+
+  /**
+   * Remove the specified resource from storage.
+   */
+  #[Route(fullUri: '{{ route }}/{id}', name: '{{ routeName }}.destroy', middleware: [{{ middleware }}])]
+  public function destroy(string $id) {}
+}

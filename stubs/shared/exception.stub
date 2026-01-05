@@ -1,0 +1,9 @@
+<?php
+
+{{ strictTypes }}
+namespace {{ namespace }};
+
+use Exception;
+
+{{ finalClass }} {{ class }} extends Exception {}
+

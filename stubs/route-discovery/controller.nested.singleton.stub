@@ -1,0 +1,57 @@
+<?php
+
+{{ strictTypes }}
+namespace {{ namespace }};
+
+use {{ namespacedModel }};
+use {{ namespacedParentModel }};
+use Illuminate\Http\Request;
+use Spatie\RouteDiscovery\Attributes\Route;
+
+{{ finalClass }} {{ class }}
+{
+  /**
+   * Show the form for creating the new resource.
+   */
+  #[Route(fullUri: '{{ route }}/{{{ parentModelVariable }}}/create', name: '{{ routeName }}.create', middleware: [{{ middleware }}])]
+  public function create({{ parentModel }} ${{ parentModelVariable }}): never
+  {
+    abort(404);
+  }
+
+  /**
+   * Store the newly created resource in storage.
+   */
+  #[Route(fullUri: '{{ route }}/{{{ parentModelVariable }}}', name: '{{ routeName }}.store', middleware: [{{ middleware }}])]
+  public function store(Request $request, {{ parentModel }} ${{ parentModelVariable }}): never
+  {
+    abort(404);
+  }
+
+  /**
+   * Display the resource.
+   */
+  #[Route(fullUri: '{{ route }}/{{{ parentModelVariable }}}', name: '{{ routeName }}.show', middleware: [{{ middleware }}])]
+  public function show({{ parentModel }} ${{ parentModelVariable }}) {}
+
+  /**
+   * Show the form for editing the resource.
+   */
+  #[Route(fullUri: '{{ route }}/{{{ parentModelVariable }}}/edit', name: '{{ routeName }}.edit', middleware: [{{ middleware }}])]
+  public function edit({{ parentModel }} ${{ parentModelVariable }}) {}
+
+  /**
+   * Update the resource in storage.
+   */
+  #[Route(fullUri: '{{ route }}/{{{ parentModelVariable }}}', name: '{{ routeName }}.update', middleware: [{{ middleware }}])]
+  public function update(Request $request, {{ parentModel }} ${{ parentModelVariable }}) {}
+
+  /**
+   * Remove the resource from storage.
+   */
+  #[Route(fullUri: '{{ route }}/{{{ parentModelVariable }}}', name: '{{ routeName }}.destroy', middleware: [{{ middleware }}])]
+  public function destroy({{ parentModel }} ${{ parentModelVariable }}): never
+  {
+    abort(404);
+  }
+}

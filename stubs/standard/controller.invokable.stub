@@ -1,0 +1,14 @@
+<?php
+
+{{ strictTypes }}
+namespace {{ namespace }};
+
+use Illuminate\Http\Request;
+
+{{ finalClass }} {{ class }}
+{
+  /**
+   * Handle the incoming request.
+   */
+  public function __invoke(Request $request) {}
+}

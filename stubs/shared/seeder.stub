@@ -1,0 +1,15 @@
+<?php
+
+{{ strictTypes }}
+namespace {{ namespace }};
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+{{ finalClass }} {{ class }} extends Seeder
+{
+	/**
+	 * Run the database seeds.
+	 */
+	public function run(): void {}
+}
