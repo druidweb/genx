@@ -11,30 +11,30 @@
   ],
   "authors": [
     {
-      "name": "JetStream Labs",
+      "name": "Jetstream Labs",
       "email": "hello@jetstreamlabs.com"
     }
   ],
   "license": "MIT",
   "require": {
     "php": "^8.4",
-    "laravel/framework": "^12.41.1",
+    "laravel/framework": "^12.44.0",
     "nesbot/carbon": "^3.11.0",
-    "symfony/console": "^7.4.0",
-    "symfony/http-kernel": "^7.4.0",
+    "symfony/console": "^7.4.3",
+    "symfony/http-kernel": "^7.4.3",
     "symfony/polyfill-php84": "^1.33.0"
   },
   "require-dev": {
-    "driftingly/rector-laravel": "^2.1.6",
-    "larastan/larastan": "^3.8.0",
+    "driftingly/rector-laravel": "^2.1.9",
+    "larastan/larastan": "^3.8.1",
     "orchestra/testbench": "^10.8.0",
-    "pestphp/pest": "^4.1.6",
-    "pestphp/pest-plugin-laravel": "^4.0",
+    "pestphp/pest": "^4.3.1",
+    "pestphp/pest-plugin-laravel": "^4.0.0",
     "pestphp/pest-plugin-type-coverage": "^4.0.3",
-    "rector/rector": "^2.2.11",
-    "spatie/laravel-route-discovery": "^1.4",
+    "rector/rector": "^2.3.0",
+    "spatie/laravel-route-discovery": "^1.4.0",
     "zenphp/fixr": "^1.0.4",
-    "zenphp/modulr": "^1.1"
+    "zenphp/modulr": "^1.1.1"
   },
   "autoload": {
     "psr-4": {
