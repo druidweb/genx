@@ -1,5 +1,12 @@
 # Release Notes
 
+## [1.0.1](https://github.com/druidweb/genx/compare/v1.0.0...v1.0.1) (2026-01-26)
+
+
+### Bug Fixes
+
+* missing functionality to publish stubs ([70b5f1a](https://github.com/druidweb/genx/commit/70b5f1a0ca82981c696406df1068ba3ab8e26632))
+
 # 1.0.0 (2026-01-05)
 
 
