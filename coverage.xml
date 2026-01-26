@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1766472027">
-  <project timestamp="1766472027" name="Clover Coverage">
+<coverage generated="1769463171">
+  <project timestamp="1769463171" name="Clover Coverage">
     <package name="Druid\Genx\Concerns">
       <file name="src/Concerns/UsesGenxConfig.php">
         <class name="Druid\Genx\Concerns\UsesGenxConfig" namespace="Druid\Genx\Concerns">
@@ -213,94 +213,102 @@
       </file>
       <file name="src/Console/Commands/ControllerMakeCommand.php">
         <class name="Druid\Genx\Console\Commands\ControllerMakeCommand" namespace="Druid\Genx\Console\Commands">
-          <metrics complexity="27" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="74" coveredstatements="74" elements="85" coveredelements="85"/>
+          <metrics complexity="40" methods="13" coveredmethods="13" conditionals="0" coveredconditionals="0" statements="80" coveredstatements="80" elements="93" coveredelements="93"/>
         </class>
-        <line num="30" type="method" name="resolveStubPath" visibility="protected" complexity="4" crap="4" count="15"/>
-        <line num="33" type="stmt" count="15"/>
-        <line num="39" type="stmt" count="15"/>
-        <line num="40" type="stmt" count="15"/>
+        <line num="38" type="method" name="resolveStubPath" visibility="protected" complexity="4" crap="4" count="15"/>
         <line num="41" type="stmt" count="15"/>
-        <line num="43" type="stmt" count="15"/>
-        <line num="44" type="stmt" count="15"/>
-        <line num="56" type="method" name="getDefaultNamespace" visibility="protected" complexity="2" crap="2" count="15"/>
-        <line num="58" type="stmt" count="15"/>
-        <line num="60" type="stmt" count="15"/>
-        <line num="64" type="stmt" count="15"/>
-        <line num="83" type="method" name="getControllerNamespaceSuffix" visibility="protected" complexity="1" crap="1" count="1"/>
-        <line num="85" type="stmt" count="1"/>
-        <line num="88" type="stmt" count="1"/>
-        <line num="90" type="stmt" count="1"/>
-        <line num="96" type="method" name="isApiController" visibility="protected" complexity="2" crap="2" count="15"/>
-        <line num="98" type="stmt" count="15"/>
-        <line num="102" type="stmt" count="15"/>
-        <line num="128" type="method" name="addRouteDiscoveryAttributes" visibility="protected" complexity="2" crap="2" count="1"/>
-        <line num="130" type="stmt" count="1"/>
-        <line num="131" type="stmt" count="1"/>
-        <line num="134" type="stmt" count="1"/>
-        <line num="135" type="stmt" count="1"/>
-        <line num="136" type="stmt" count="1"/>
-        <line num="137" type="stmt" count="1"/>
-        <line num="138" type="stmt" count="1"/>
-        <line num="139" type="stmt" count="1"/>
-        <line num="143" type="stmt" count="1"/>
-        <line num="145" type="stmt" count="1"/>
-        <line num="146" type="stmt" count="1"/>
-        <line num="147" type="stmt" count="1"/>
-        <line num="148" type="stmt" count="1"/>
-        <line num="149" type="stmt" count="1"/>
-        <line num="155" type="method" name="replaceRouteAttributes" visibility="protected" complexity="2" crap="2" count="15"/>
-        <line num="158" type="stmt" count="15"/>
-        <line num="159" type="stmt" count="14"/>
-        <line num="162" type="stmt" count="1"/>
-        <line num="163" type="stmt" count="1"/>
-        <line num="164" type="stmt" count="1"/>
-        <line num="166" type="stmt" count="1"/>
-        <line num="167" type="stmt" count="1"/>
-        <line num="168" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="15"/>
+        <line num="48" type="stmt" count="15"/>
+        <line num="49" type="stmt" count="15"/>
+        <line num="51" type="stmt" count="15"/>
+        <line num="52" type="stmt" count="15"/>
+        <line num="64" type="method" name="getDefaultNamespace" visibility="protected" complexity="2" crap="2" count="15"/>
+        <line num="66" type="stmt" count="15"/>
+        <line num="68" type="stmt" count="15"/>
+        <line num="72" type="stmt" count="15"/>
+        <line num="91" type="method" name="getControllerNamespaceSuffix" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="93" type="stmt" count="1"/>
+        <line num="96" type="stmt" count="1"/>
+        <line num="98" type="stmt" count="1"/>
+        <line num="104" type="method" name="isApiController" visibility="protected" complexity="2" crap="2" count="15"/>
+        <line num="106" type="stmt" count="15"/>
+        <line num="110" type="stmt" count="15"/>
+        <line num="167" type="method" name="addRouteDiscoveryAttributes" visibility="protected" complexity="2" crap="2" count="1"/>
         <line num="169" type="stmt" count="1"/>
         <line num="170" type="stmt" count="1"/>
-        <line num="176" type="method" name="getControllerNamespacePrefix" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="173" type="stmt" count="1"/>
+        <line num="174" type="stmt" count="1"/>
+        <line num="175" type="stmt" count="1"/>
+        <line num="176" type="stmt" count="1"/>
+        <line num="177" type="stmt" count="1"/>
         <line num="178" type="stmt" count="1"/>
-        <line num="186" type="method" name="getRouteFromName" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="182" type="stmt" count="1"/>
+        <line num="184" type="stmt" count="1"/>
+        <line num="185" type="stmt" count="1"/>
+        <line num="186" type="stmt" count="1"/>
+        <line num="187" type="stmt" count="1"/>
         <line num="188" type="stmt" count="1"/>
-        <line num="189" type="stmt" count="1"/>
-        <line num="190" type="stmt" count="1"/>
-        <line num="192" type="stmt" count="1"/>
-        <line num="193" type="stmt" count="1"/>
-        <line num="194" type="stmt" count="1"/>
-        <line num="195" type="stmt" count="1"/>
-        <line num="203" type="method" name="getRouteNameFromName" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="194" type="method" name="replaceRouteAttributes" visibility="protected" complexity="2" crap="2" count="15"/>
+        <line num="197" type="stmt" count="15"/>
+        <line num="198" type="stmt" count="14"/>
+        <line num="201" type="stmt" count="1"/>
+        <line num="202" type="stmt" count="1"/>
+        <line num="203" type="stmt" count="1"/>
         <line num="205" type="stmt" count="1"/>
         <line num="206" type="stmt" count="1"/>
         <line num="207" type="stmt" count="1"/>
+        <line num="208" type="stmt" count="1"/>
         <line num="209" type="stmt" count="1"/>
-        <line num="210" type="stmt" count="1"/>
-        <line num="211" type="stmt" count="1"/>
-        <line num="212" type="stmt" count="1"/>
-        <line num="218" type="method" name="promptForMiddleware" visibility="protected" complexity="2" crap="2" count="1"/>
-        <line num="220" type="stmt" count="1"/>
-        <line num="222" type="stmt" count="1"/>
-        <line num="223" type="stmt" count="1"/>
-        <line num="224" type="stmt" count="1"/>
-        <line num="225" type="stmt" count="1"/>
-        <line num="226" type="stmt" count="1"/>
+        <line num="215" type="method" name="getControllerNamespacePrefix" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="217" type="stmt" count="1"/>
+        <line num="225" type="method" name="getRouteFromName" visibility="protected" complexity="1" crap="1" count="1"/>
         <line num="227" type="stmt" count="1"/>
+        <line num="228" type="stmt" count="1"/>
         <line num="229" type="stmt" count="1"/>
+        <line num="231" type="stmt" count="1"/>
+        <line num="232" type="stmt" count="1"/>
+        <line num="233" type="stmt" count="1"/>
         <line num="234" type="stmt" count="1"/>
-        <line num="235" type="stmt" count="1"/>
-        <line num="236" type="stmt" count="1"/>
-        <line num="244" type="method" name="getAvailableMiddleware" visibility="protected" complexity="2" crap="2" count="1"/>
+        <line num="242" type="method" name="getRouteNameFromName" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="244" type="stmt" count="1"/>
+        <line num="245" type="stmt" count="1"/>
         <line num="246" type="stmt" count="1"/>
-        <line num="247" type="stmt" count="1"/>
         <line num="248" type="stmt" count="1"/>
         <line num="249" type="stmt" count="1"/>
         <line num="250" type="stmt" count="1"/>
         <line num="251" type="stmt" count="1"/>
-        <line num="252" type="stmt" count="1"/>
-        <line num="253" type="stmt" count="1"/>
-        <line num="254" type="stmt" count="1"/>
-        <line num="264" type="stmt" count="1"/>
-        <metrics loc="300" ncloc="214" classes="1" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="74" coveredstatements="74" elements="85" coveredelements="85"/>
+        <line num="257" type="method" name="promptForMiddleware" visibility="protected" complexity="4" crap="4" count="1"/>
+        <line num="268" type="stmt" count="1"/>
+        <line num="273" type="stmt" count="1"/>
+        <line num="279" type="method" name="collectMiddlewareSelection" visibility="protected" complexity="3" crap="3" count="1"/>
+        <line num="288" type="stmt" count="1"/>
+        <line num="290" type="stmt" count="1"/>
+        <line num="291" type="stmt" count="1"/>
+        <line num="292" type="stmt" count="1"/>
+        <line num="293" type="stmt" count="1"/>
+        <line num="294" type="stmt" count="1"/>
+        <line num="295" type="stmt" count="1"/>
+        <line num="297" type="stmt" count="1"/>
+        <line num="302" type="stmt" count="1"/>
+        <line num="303" type="stmt" count="1"/>
+        <line num="304" type="stmt" count="1"/>
+        <line num="312" type="method" name="getAvailableMiddleware" visibility="protected" complexity="2" crap="2" count="1"/>
+        <line num="314" type="stmt" count="1"/>
+        <line num="315" type="stmt" count="1"/>
+        <line num="316" type="stmt" count="1"/>
+        <line num="317" type="stmt" count="1"/>
+        <line num="318" type="stmt" count="1"/>
+        <line num="319" type="stmt" count="1"/>
+        <line num="320" type="stmt" count="1"/>
+        <line num="321" type="stmt" count="1"/>
+        <line num="322" type="stmt" count="1"/>
+        <line num="332" type="stmt" count="1"/>
+        <line num="373" type="method" name="getOptions" visibility="protected" complexity="1" crap="1" count="85"/>
+        <line num="376" type="stmt" count="85"/>
+        <line num="377" type="stmt" count="85"/>
+        <line num="378" type="stmt" count="85"/>
+        <line num="380" type="stmt" count="85"/>
+        <metrics loc="383" ncloc="264" classes="1" methods="13" coveredmethods="13" conditionals="0" coveredconditionals="0" statements="80" coveredstatements="80" elements="93" coveredelements="93"/>
       </file>
       <file name="src/Console/Commands/EnumMakeCommand.php">
         <class name="Druid\Genx\Console\Commands\EnumMakeCommand" namespace="Druid\Genx\Console\Commands">
@@ -448,17 +456,17 @@
       </file>
       <file name="src/Console/Commands/ModelMakeCommand.php">
         <class name="Druid\Genx\Console\Commands\ModelMakeCommand" namespace="Druid\Genx\Console\Commands">
-          <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
+          <metrics complexity="6" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
         </class>
-        <line num="19" type="method" name="getDefaultNamespace" visibility="protected" complexity="1" crap="1" count="5"/>
-        <line num="21" type="stmt" count="5"/>
+        <line num="21" type="method" name="getDefaultNamespace" visibility="protected" complexity="1" crap="1" count="5"/>
         <line num="23" type="stmt" count="5"/>
-        <line num="29" type="method" name="resolveStubPath" visibility="protected" complexity="1" crap="1" count="5"/>
-        <line num="31" type="stmt" count="5"/>
-        <line num="37" type="method" name="buildClass" visibility="protected" complexity="1" crap="1" count="5"/>
-        <line num="39" type="stmt" count="5"/>
+        <line num="25" type="stmt" count="5"/>
+        <line num="31" type="method" name="resolveStubPath" visibility="protected" complexity="1" crap="1" count="5"/>
+        <line num="33" type="stmt" count="5"/>
+        <line num="39" type="method" name="buildClass" visibility="protected" complexity="1" crap="1" count="5"/>
         <line num="41" type="stmt" count="5"/>
-        <metrics loc="44" ncloc="35" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
+        <line num="43" type="stmt" count="5"/>
+        <metrics loc="62" ncloc="46" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
       </file>
       <file name="src/Console/Commands/NotificationMakeCommand.php">
         <class name="Druid\Genx\Console\Commands\NotificationMakeCommand" namespace="Druid\Genx\Console\Commands">
@@ -621,7 +629,7 @@
     <package name="Druid\Genx\Console">
       <file name="src/Console/InstallCommand.php">
         <class name="Druid\Genx\Console\InstallCommand" namespace="Druid\Genx\Console">
-          <metrics complexity="51" methods="16" coveredmethods="16" conditionals="0" coveredconditionals="0" statements="223" coveredstatements="223" elements="239" coveredelements="239"/>
+          <metrics complexity="76" methods="19" coveredmethods="19" conditionals="0" coveredconditionals="0" statements="261" coveredstatements="261" elements="280" coveredelements="280"/>
         </class>
         <line num="35" type="method" name="handle" visibility="public" complexity="2" crap="2" count="17"/>
         <line num="37" type="stmt" count="17"/>
@@ -761,108 +769,149 @@
         <line num="255" type="stmt" count="16"/>
         <line num="257" type="stmt" count="16"/>
         <line num="259" type="stmt" count="16"/>
-        <line num="262" type="method" name="publishStubs" visibility="private" complexity="6" crap="6" count="16"/>
+        <line num="262" type="method" name="publishStubs" visibility="private" complexity="4" crap="4" count="16"/>
         <line num="264" type="stmt" count="16"/>
         <line num="266" type="stmt" count="16"/>
         <line num="267" type="stmt" count="16"/>
-        <line num="270" type="stmt" count="16"/>
         <line num="271" type="stmt" count="16"/>
-        <line num="272" type="stmt" count="16"/>
-        <line num="273" type="stmt" count="16"/>
         <line num="274" type="stmt" count="16"/>
-        <line num="276" type="stmt" count="16"/>
-        <line num="278" type="stmt" count="16"/>
-        <line num="279" type="stmt" count="16"/>
-        <line num="280" type="stmt" count="16"/>
-        <line num="282" type="stmt" count="16"/>
-        <line num="283" type="stmt" count="16"/>
-        <line num="286" type="stmt" count="16"/>
-        <line num="287" type="stmt" count="16"/>
-        <line num="289" type="stmt" count="16"/>
-        <line num="294" type="stmt" count="16"/>
-        <line num="295" type="stmt" count="3"/>
-        <line num="299" type="method" name="publishModulrStubs" visibility="private" complexity="8" crap="8" count="3"/>
-        <line num="301" type="stmt" count="3"/>
-        <line num="303" type="stmt" count="3"/>
-        <line num="304" type="stmt" count="3"/>
-        <line num="307" type="stmt" count="3"/>
-        <line num="310" type="stmt" count="3"/>
-        <line num="311" type="stmt" count="3"/>
-        <line num="312" type="stmt" count="3"/>
-        <line num="313" type="stmt" count="3"/>
-        <line num="315" type="stmt" count="3"/>
-        <line num="316" type="stmt" count="3"/>
-        <line num="317" type="stmt" count="3"/>
-        <line num="319" type="stmt" count="3"/>
-        <line num="320" type="stmt" count="3"/>
-        <line num="325" type="stmt" count="3"/>
-        <line num="326" type="stmt" count="3"/>
-        <line num="327" type="stmt" count="3"/>
-        <line num="329" type="stmt" count="3"/>
-        <line num="330" type="stmt" count="3"/>
-        <line num="331" type="stmt" count="3"/>
-        <line num="333" type="stmt" count="3"/>
-        <line num="334" type="stmt" count="3"/>
-        <line num="337" type="stmt" count="3"/>
-        <line num="338" type="stmt" count="3"/>
-        <line num="340" type="stmt" count="3"/>
-        <line num="341" type="stmt" count="3"/>
-        <line num="343" type="stmt" count="3"/>
-        <line num="347" type="stmt" count="3"/>
-        <line num="348" type="stmt" count="3"/>
-        <line num="349" type="stmt" count="3"/>
-        <line num="352" type="method" name="generateConfigContent" visibility="private" complexity="5" crap="5" count="16"/>
-        <line num="354" type="stmt" count="16"/>
-        <line num="355" type="stmt" count="16"/>
-        <line num="356" type="stmt" count="16"/>
-        <line num="357" type="stmt" count="16"/>
-        <line num="359" type="stmt" count="16"/>
-        <line num="361" type="stmt" count="16"/>
-        <line num="362" type="stmt" count="16"/>
-        <line num="381" type="stmt" count="16"/>
-        <line num="382" type="stmt" count="16"/>
-        <line num="399" type="stmt" count="16"/>
-        <line num="400" type="stmt" count="16"/>
-        <line num="409" type="stmt" count="16"/>
-        <line num="413" type="stmt" count="16"/>
-        <line num="419" type="method" name="formatPathsArray" visibility="private" complexity="2" crap="2" count="16"/>
-        <line num="421" type="stmt" count="16"/>
-        <line num="423" type="stmt" count="16"/>
-        <line num="424" type="stmt" count="16"/>
-        <line num="427" type="stmt" count="16"/>
-        <line num="433" type="method" name="getDefaultPaths" visibility="private" complexity="1" crap="1" count="17"/>
-        <line num="435" type="stmt" count="17"/>
-        <line num="436" type="stmt" count="17"/>
-        <line num="437" type="stmt" count="17"/>
-        <line num="438" type="stmt" count="17"/>
-        <line num="439" type="stmt" count="17"/>
-        <line num="440" type="stmt" count="17"/>
-        <line num="441" type="stmt" count="17"/>
-        <line num="442" type="stmt" count="17"/>
-        <line num="443" type="stmt" count="17"/>
-        <line num="444" type="stmt" count="17"/>
-        <line num="445" type="stmt" count="17"/>
-        <line num="446" type="stmt" count="17"/>
-        <line num="447" type="stmt" count="17"/>
-        <line num="448" type="stmt" count="17"/>
-        <line num="449" type="stmt" count="17"/>
-        <line num="450" type="stmt" count="17"/>
-        <line num="451" type="stmt" count="17"/>
-        <line num="452" type="stmt" count="17"/>
-        <line num="453" type="stmt" count="17"/>
-        <line num="454" type="stmt" count="17"/>
-        <line num="455" type="stmt" count="17"/>
-        <line num="456" type="stmt" count="17"/>
-        <line num="457" type="stmt" count="17"/>
-        <line num="458" type="stmt" count="17"/>
-        <line num="459" type="stmt" count="17"/>
-        <line num="460" type="stmt" count="17"/>
-        <line num="461" type="stmt" count="17"/>
-        <line num="462" type="stmt" count="17"/>
-        <line num="463" type="stmt" count="17"/>
-        <line num="464" type="stmt" count="17"/>
-        <line num="465" type="stmt" count="17"/>
-        <metrics loc="468" ncloc="447" classes="1" methods="16" coveredmethods="16" conditionals="0" coveredconditionals="0" statements="223" coveredstatements="223" elements="239" coveredelements="239"/>
+        <line num="275" type="stmt" count="2"/>
+        <line num="277" type="stmt" count="14"/>
+        <line num="281" type="stmt" count="16"/>
+        <line num="282" type="stmt" count="3"/>
+        <line num="286" type="method" name="publishSharedStubs" visibility="private" complexity="9" crap="9" count="16"/>
+        <line num="288" type="stmt" count="16"/>
+        <line num="302" type="stmt" count="16"/>
+        <line num="303" type="stmt" count="16"/>
+        <line num="304" type="stmt" count="16"/>
+        <line num="306" type="stmt" count="16"/>
+        <line num="307" type="stmt" count="16"/>
+        <line num="309" type="stmt" count="16"/>
+        <line num="310" type="stmt" count="16"/>
+        <line num="312" type="stmt" count="16"/>
+        <line num="313" type="stmt" count="16"/>
+        <line num="316" type="stmt" count="16"/>
+        <line num="317" type="stmt" count="16"/>
+        <line num="319" type="stmt" count="16"/>
+        <line num="320" type="stmt" count="16"/>
+        <line num="322" type="stmt" count="16"/>
+        <line num="326" type="stmt" count="16"/>
+        <line num="329" type="method" name="publishStandardStubs" visibility="private" complexity="9" crap="9" count="14"/>
+        <line num="331" type="stmt" count="14"/>
+        <line num="345" type="stmt" count="14"/>
+        <line num="346" type="stmt" count="14"/>
+        <line num="347" type="stmt" count="14"/>
+        <line num="349" type="stmt" count="14"/>
+        <line num="350" type="stmt" count="14"/>
+        <line num="352" type="stmt" count="14"/>
+        <line num="353" type="stmt" count="14"/>
+        <line num="355" type="stmt" count="14"/>
+        <line num="356" type="stmt" count="14"/>
+        <line num="359" type="stmt" count="14"/>
+        <line num="360" type="stmt" count="14"/>
+        <line num="362" type="stmt" count="14"/>
+        <line num="363" type="stmt" count="14"/>
+        <line num="365" type="stmt" count="14"/>
+        <line num="369" type="stmt" count="14"/>
+        <line num="372" type="method" name="publishRouteDiscoveryStubs" visibility="private" complexity="9" crap="9" count="2"/>
+        <line num="374" type="stmt" count="2"/>
+        <line num="388" type="stmt" count="2"/>
+        <line num="389" type="stmt" count="2"/>
+        <line num="390" type="stmt" count="2"/>
+        <line num="392" type="stmt" count="2"/>
+        <line num="393" type="stmt" count="2"/>
+        <line num="395" type="stmt" count="2"/>
+        <line num="396" type="stmt" count="2"/>
+        <line num="398" type="stmt" count="2"/>
+        <line num="399" type="stmt" count="2"/>
+        <line num="402" type="stmt" count="2"/>
+        <line num="403" type="stmt" count="2"/>
+        <line num="405" type="stmt" count="2"/>
+        <line num="406" type="stmt" count="2"/>
+        <line num="408" type="stmt" count="2"/>
+        <line num="412" type="stmt" count="2"/>
+        <line num="415" type="method" name="publishModulrStubs" visibility="private" complexity="8" crap="8" count="3"/>
+        <line num="417" type="stmt" count="3"/>
+        <line num="419" type="stmt" count="3"/>
+        <line num="420" type="stmt" count="3"/>
+        <line num="423" type="stmt" count="3"/>
+        <line num="426" type="stmt" count="3"/>
+        <line num="427" type="stmt" count="3"/>
+        <line num="428" type="stmt" count="3"/>
+        <line num="429" type="stmt" count="3"/>
+        <line num="431" type="stmt" count="3"/>
+        <line num="432" type="stmt" count="3"/>
+        <line num="433" type="stmt" count="3"/>
+        <line num="435" type="stmt" count="3"/>
+        <line num="436" type="stmt" count="3"/>
+        <line num="441" type="stmt" count="3"/>
+        <line num="442" type="stmt" count="3"/>
+        <line num="443" type="stmt" count="3"/>
+        <line num="445" type="stmt" count="3"/>
+        <line num="446" type="stmt" count="3"/>
+        <line num="447" type="stmt" count="3"/>
+        <line num="449" type="stmt" count="3"/>
+        <line num="450" type="stmt" count="3"/>
+        <line num="453" type="stmt" count="3"/>
+        <line num="454" type="stmt" count="3"/>
+        <line num="456" type="stmt" count="3"/>
+        <line num="457" type="stmt" count="3"/>
+        <line num="459" type="stmt" count="3"/>
+        <line num="463" type="stmt" count="3"/>
+        <line num="464" type="stmt" count="3"/>
+        <line num="465" type="stmt" count="3"/>
+        <line num="468" type="method" name="generateConfigContent" visibility="private" complexity="5" crap="5" count="16"/>
+        <line num="470" type="stmt" count="16"/>
+        <line num="471" type="stmt" count="16"/>
+        <line num="472" type="stmt" count="16"/>
+        <line num="473" type="stmt" count="16"/>
+        <line num="475" type="stmt" count="16"/>
+        <line num="477" type="stmt" count="16"/>
+        <line num="478" type="stmt" count="16"/>
+        <line num="497" type="stmt" count="16"/>
+        <line num="498" type="stmt" count="16"/>
+        <line num="515" type="stmt" count="16"/>
+        <line num="516" type="stmt" count="16"/>
+        <line num="525" type="stmt" count="16"/>
+        <line num="529" type="stmt" count="16"/>
+        <line num="535" type="method" name="formatPathsArray" visibility="private" complexity="2" crap="2" count="16"/>
+        <line num="537" type="stmt" count="16"/>
+        <line num="539" type="stmt" count="16"/>
+        <line num="540" type="stmt" count="16"/>
+        <line num="543" type="stmt" count="16"/>
+        <line num="549" type="method" name="getDefaultPaths" visibility="private" complexity="1" crap="1" count="17"/>
+        <line num="551" type="stmt" count="17"/>
+        <line num="552" type="stmt" count="17"/>
+        <line num="553" type="stmt" count="17"/>
+        <line num="554" type="stmt" count="17"/>
+        <line num="555" type="stmt" count="17"/>
+        <line num="556" type="stmt" count="17"/>
+        <line num="557" type="stmt" count="17"/>
+        <line num="558" type="stmt" count="17"/>
+        <line num="559" type="stmt" count="17"/>
+        <line num="560" type="stmt" count="17"/>
+        <line num="561" type="stmt" count="17"/>
+        <line num="562" type="stmt" count="17"/>
+        <line num="563" type="stmt" count="17"/>
+        <line num="564" type="stmt" count="17"/>
+        <line num="565" type="stmt" count="17"/>
+        <line num="566" type="stmt" count="17"/>
+        <line num="567" type="stmt" count="17"/>
+        <line num="568" type="stmt" count="17"/>
+        <line num="569" type="stmt" count="17"/>
+        <line num="570" type="stmt" count="17"/>
+        <line num="571" type="stmt" count="17"/>
+        <line num="572" type="stmt" count="17"/>
+        <line num="573" type="stmt" count="17"/>
+        <line num="574" type="stmt" count="17"/>
+        <line num="575" type="stmt" count="17"/>
+        <line num="576" type="stmt" count="17"/>
+        <line num="577" type="stmt" count="17"/>
+        <line num="578" type="stmt" count="17"/>
+        <line num="579" type="stmt" count="17"/>
+        <line num="580" type="stmt" count="17"/>
+        <line num="581" type="stmt" count="17"/>
+        <metrics loc="584" ncloc="553" classes="1" methods="19" coveredmethods="19" conditionals="0" coveredconditionals="0" statements="261" coveredstatements="261" elements="280" coveredelements="280"/>
       </file>
     </package>
     <package name="Druid\Genx\Database">
@@ -892,20 +941,29 @@
     <package name="Druid\Genx">
       <file name="src/GenxServiceProvider.php">
         <class name="Druid\Genx\GenxServiceProvider" namespace="Druid\Genx">
-          <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="11" coveredelements="11"/>
+          <metrics complexity="5" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
         </class>
-        <line num="16" type="method" name="register" visibility="public" complexity="1" crap="1" count="92"/>
-        <line num="19" type="stmt" count="92"/>
-        <line num="22" type="stmt" count="92"/>
-        <line num="24" type="stmt" count="1"/>
-        <line num="26" type="stmt" count="1"/>
-        <line num="27" type="stmt" count="92"/>
-        <line num="30" type="method" name="boot" visibility="public" complexity="2" crap="2" count="92"/>
-        <line num="32" type="stmt" count="92"/>
-        <line num="33" type="stmt" count="92"/>
-        <line num="34" type="stmt" count="92"/>
-        <line num="35" type="stmt" count="92"/>
-        <metrics loc="39" ncloc="36" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="11" coveredelements="11"/>
+        <line num="19" type="method" name="register" visibility="public" complexity="1" crap="1" count="91"/>
+        <line num="22" type="stmt" count="91"/>
+        <line num="25" type="stmt" count="91"/>
+        <line num="27" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="91"/>
+        <line num="33" type="method" name="boot" visibility="public" complexity="2" crap="2" count="91"/>
+        <line num="35" type="stmt" count="91"/>
+        <line num="37" type="stmt" count="91"/>
+        <line num="38" type="stmt" count="91"/>
+        <line num="39" type="stmt" count="91"/>
+        <line num="40" type="stmt" count="91"/>
+        <metrics loc="62" ncloc="53" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
+      </file>
+    </package>
+    <package name="Druid\Genx\Listeners">
+      <file name="src/Listeners/ControllerPromptsListener.php">
+        <class name="Druid\Genx\Listeners\ControllerPromptsListener" namespace="Druid\Genx\Listeners">
+          <metrics complexity="6" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="75" ncloc="59" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
     <package name="Druid\Genx\Providers">
@@ -913,12 +971,12 @@
         <class name="Druid\Genx\Providers\GenxArtisanServiceProvider" namespace="Druid\Genx\Providers">
           <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
         </class>
-        <line num="80" type="method" name="register" visibility="public" complexity="1" crap="1" count="92"/>
-        <line num="83" type="stmt" count="92"/>
-        <line num="85" type="stmt" count="92"/>
+        <line num="80" type="method" name="register" visibility="public" complexity="1" crap="1" count="91"/>
+        <line num="83" type="stmt" count="91"/>
+        <line num="85" type="stmt" count="91"/>
         <metrics loc="88" ncloc="79" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </file>
     </package>
-    <metrics files="34" loc="2530" ncloc="2045" classes="33" methods="126" coveredmethods="126" conditionals="0" coveredconditionals="0" statements="576" coveredstatements="576" elements="702" coveredelements="702"/>
+    <metrics files="35" loc="2845" ncloc="2288" classes="33" methods="131" coveredmethods="131" conditionals="0" coveredconditionals="0" statements="621" coveredstatements="621" elements="752" coveredelements="752"/>
   </project>
 </coverage>

@@ -267,33 +267,149 @@ class InstallCommand extends Command
       mkdir($stubsPath, 0755, true);
     }
 
-    $migrationStubs = [
-      'migration.stub',
-      'migration.create.stub',
-      'migration.update.stub',
-    ];
+    // Publish all shared stubs
+    $this->publishSharedStubs($stubsPath);
 
-    $sourceDir = dirname(__DIR__, 2).'/stubs/shared';
-
-    foreach ($migrationStubs as $stub) {
-      $source = $sourceDir.'/'.$stub;
-      $destination = $stubsPath.'/'.$stub;
-
-      if (file_exists($source)) {
-        $content = (string) file_get_contents($source);
-
-        // Process strict_types placeholder based on config
-        $strictTypes = $this->config['strict_types'] ? "declare(strict_types=1);\n" : '';
-        $content = str_replace('{{ strictTypes }}', $strictTypes, $content);
-
-        file_put_contents($destination, $content);
-      }
+    // Publish controller stubs (standard or route-discovery)
+    if ($this->config['route_discovery']) {
+      $this->publishRouteDiscoveryStubs($stubsPath);
+    } else {
+      $this->publishStandardStubs($stubsPath);
     }
 
     // Publish modulr stubs if modulr is enabled
     if ($this->config['modulr']) {
       $this->publishModulrStubs($stubsPath);
     }
+  }
+
+  private function publishSharedStubs(string $stubsPath): void
+  {
+    $sourceDir = dirname(__DIR__, 2).'/stubs/shared';
+
+    // @codeCoverageIgnoreStart
+    if (! is_dir($sourceDir)) {
+      return;
+    }
+
+    $files = scandir($sourceDir);
+
+    if ($files === false) {
+      return;
+    }
+    // @codeCoverageIgnoreEnd
+
+    foreach ($files as $file) {
+      if ($file === '.') {
+        continue;
+      }
+      if ($file === '..') {
+        continue;
+      }
+      $source = $sourceDir.'/'.$file;
+      $destination = $stubsPath.'/'.$file;
+
+      if (is_file($source)) {
+        $content = (string) file_get_contents($source);
+
+        // Process genx placeholders based on config
+        $strictTypes = $this->config['strict_types'] ? "declare(strict_types=1);\n" : '';
+        $content = str_replace('{{ strictTypes }}', $strictTypes, $content);
+
+        $finalClass = $this->config['final_classes'] ? 'final class' : 'class';
+        $content = str_replace('{{ finalClass }}', $finalClass, $content);
+
+        file_put_contents($destination, $content);
+      }
+    }
+
+    note('Shared stubs published to stubs/');
+  }
+
+  private function publishStandardStubs(string $stubsPath): void
+  {
+    $sourceDir = dirname(__DIR__, 2).'/stubs/standard';
+
+    // @codeCoverageIgnoreStart
+    if (! is_dir($sourceDir)) {
+      return;
+    }
+
+    $files = scandir($sourceDir);
+
+    if ($files === false) {
+      return;
+    }
+    // @codeCoverageIgnoreEnd
+
+    foreach ($files as $file) {
+      if ($file === '.') {
+        continue;
+      }
+      if ($file === '..') {
+        continue;
+      }
+      $source = $sourceDir.'/'.$file;
+      $destination = $stubsPath.'/'.$file;
+
+      if (is_file($source)) {
+        $content = (string) file_get_contents($source);
+
+        // Process genx placeholders based on config
+        $strictTypes = $this->config['strict_types'] ? "declare(strict_types=1);\n" : '';
+        $content = str_replace('{{ strictTypes }}', $strictTypes, $content);
+
+        $finalClass = $this->config['final_classes'] ? 'final class' : 'class';
+        $content = str_replace('{{ finalClass }}', $finalClass, $content);
+
+        file_put_contents($destination, $content);
+      }
+    }
+
+    note('Standard controller stubs published to stubs/');
+  }
+
+  private function publishRouteDiscoveryStubs(string $stubsPath): void
+  {
+    $sourceDir = dirname(__DIR__, 2).'/stubs/route-discovery';
+
+    // @codeCoverageIgnoreStart
+    if (! is_dir($sourceDir)) {
+      return;
+    }
+
+    $files = scandir($sourceDir);
+
+    if ($files === false) {
+      return;
+    }
+    // @codeCoverageIgnoreEnd
+
+    foreach ($files as $file) {
+      if ($file === '.') {
+        continue;
+      }
+      if ($file === '..') {
+        continue;
+      }
+      $source = $sourceDir.'/'.$file;
+      $destination = $stubsPath.'/'.$file;
+
+      if (is_file($source)) {
+        $content = (string) file_get_contents($source);
+
+        // Process genx placeholders based on config
+        $strictTypes = $this->config['strict_types'] ? "declare(strict_types=1);\n" : '';
+        $content = str_replace('{{ strictTypes }}', $strictTypes, $content);
+
+        $finalClass = $this->config['final_classes'] ? 'final class' : 'class';
+        $content = str_replace('{{ finalClass }}', $finalClass, $content);
+
+        file_put_contents($destination, $content);
+      }
+    }
+
+    note('Route Discovery controller stubs published to stubs/');
   }
 
   private function publishModulrStubs(string $stubsPath): void
