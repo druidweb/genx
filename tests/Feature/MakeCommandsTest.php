@@ -342,6 +342,15 @@ describe('ObserverMakeCommand', function (): void {
     expect($content)->toContain('declare(strict_types=1);');
     expect($content)->toContain('final class TestObserver');
   });
+
+  it('qualifies the model when --model is provided', function (): void {
+    File::ensureDirectoryExists(app_path('Models'));
+
+    $this->artisan('make:observer', ['name' => 'TestObserver', '--model' => 'TestModel'])->assertSuccessful();
+
+    $content = File::get(app_path('Observers/TestObserver.php'));
+    expect($content)->toContain('use App\Models\TestModel;');
+  });
 });
 
 describe('PolicyMakeCommand', function (): void {
@@ -354,6 +363,15 @@ describe('PolicyMakeCommand', function (): void {
     $content = File::get(app_path('Policies/TestPolicy.php'));
     expect($content)->toContain('declare(strict_types=1);');
     expect($content)->toContain('final class TestPolicy');
+  });
+
+  it('qualifies the model when --model is provided', function (): void {
+    File::ensureDirectoryExists(app_path('Models'));
+
+    $this->artisan('make:policy', ['name' => 'TestPolicy', '--model' => 'TestModel'])->assertSuccessful();
+
+    $content = File::get(app_path('Policies/TestPolicy.php'));
+    expect($content)->toContain('use App\Models\TestModel;');
   });
 });
 

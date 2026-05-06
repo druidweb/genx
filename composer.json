@@ -18,7 +18,7 @@
   "license": "MIT",
   "require": {
     "php": "^8.4",
-    "laravel/framework": "^13.0",
+    "laravel/framework": "^13.8.0",
     "nesbot/carbon": "^3.11.4",
     "symfony/console": "^7.4.9",
     "symfony/http-kernel": "^7.4.8",
@@ -27,14 +27,14 @@
   "require-dev": {
     "driftingly/rector-laravel": "^2.3.0",
     "larastan/larastan": "^3.9.6",
-    "orchestra/testbench": "^11.0",
+    "orchestra/testbench": "^11.1.0",
     "pestphp/pest": "^4.7.0",
     "pestphp/pest-plugin-laravel": "^4.1.0",
     "pestphp/pest-plugin-type-coverage": "^4.0.4",
     "rector/rector": "^2.4.2",
     "spatie/laravel-route-discovery": "^1.6.0",
     "zenphp/fixr": "^1.0.4",
-    "zenphp/modulr": "^1.2.2"
+    "zenphp/modulr": "^1.3.0"
   },
   "autoload": {
     "psr-4": {
@@ -66,7 +66,6 @@
       "@test:types",
       "@test:static",
       "@test:lint",
-      "@test:types",
       "@test:feat"
     ]
   },

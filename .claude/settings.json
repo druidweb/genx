@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(./vendor/bin/rector --dry-run --no-progress-bar)",
-      "Bash(./vendor/bin/phpstan analyze *)"
+      "Bash(./vendor/bin/phpstan analyze *)",
+      "Bash(./vendor/bin/pest --coverage --filter=\"ObserverMakeCommand|PolicyMakeCommand\")",
+      "Bash(./vendor/bin/pest --filter=\"ObserverMakeCommand|PolicyMakeCommand\")",
+      "Bash(./vendor/bin/pest --filter=\"qualifies the model\")",
+      "Read(//private/tmp/**)",
+      "Bash(rm -rf check-stubs)",
+      "Bash(mkdir check-stubs *)",
+      "Bash(find vendor/laravel/framework/src/Illuminate/Foundation/Console/stubs -name \"*observer*\" -o -name \"*policy*\")",
+      "Bash(./vendor/bin/pest --coverage)"
     ]
   }
 }
