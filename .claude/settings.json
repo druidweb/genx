@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./vendor/bin/rector --dry-run --no-progress-bar)",
+      "Bash(./vendor/bin/phpstan analyze *)"
+    ]
+  }
+}

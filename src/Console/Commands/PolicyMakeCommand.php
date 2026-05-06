@@ -26,8 +26,7 @@ class PolicyMakeCommand extends BasePolicyMakeCommand
   /**
    * Qualify the given model class base name.
    *
-   *
-   * @codeCoverageIgnore
+   * @return string
    */
   protected function qualifyModel(string $model): string // @pest-ignore-type
   {

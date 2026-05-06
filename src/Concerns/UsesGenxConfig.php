@@ -10,6 +10,9 @@ use Symfony\Component\Console\Input\InputOption;
 use Zen\Modulr\Support\ConfigStore;
 use Zen\Modulr\Support\Registry;
 
+// Overrides below (and in Console\Commands\*MakeCommand) keep parameters untyped because the Laravel
+// parents declare them without types — adding a native type would violate LSP and PHP would fatal.
+// PHPDoc carries the type for static analysis; `// @pest-ignore-type` silences pest type-coverage.
 trait UsesGenxConfig
 {
   /**
