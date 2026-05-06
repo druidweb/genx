@@ -1,5 +1,12 @@
 # Release Notes
 
+## [1.1.1](https://github.com/druidweb/genx/compare/v1.1.0...v1.1.1) (2026-05-06)
+
+
+### Bug Fixes
+
+* update for L 12 and 13 in composer ([dccd6e3](https://github.com/druidweb/genx/commit/dccd6e3e14ad34d20711016dd38fc90aa51d2ce5))
+
 # [1.1.0](https://github.com/druidweb/genx/compare/v1.0.1...v1.1.0) (2026-05-06)
 
 
