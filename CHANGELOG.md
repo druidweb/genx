@@ -1,5 +1,25 @@
 # Release Notes
 
+# [1.1.0](https://github.com/druidweb/genx/compare/v1.0.1...v1.1.0) (2026-05-06)
+
+
+* Merge branch 'main' of github.com:druidweb/genx ([266f9b1](https://github.com/druidweb/genx/commit/266f9b129eef0bfafac3d4221838a50467c1322d))
+
+
+### Features
+
+* update for laravel 13 compatibility ([207f183](https://github.com/druidweb/genx/commit/207f18384bbd2d2ce52a4a13e4b0ec54e771c8e0))
+
+
+### Maintenance
+
+* update wrokflows and deps ([33d4908](https://github.com/druidweb/genx/commit/33d49082ee8dae8019278efb3ce638a948280f61))
+
+
+### Work in Progress
+
+* updating for L13 ([4e9a436](https://github.com/druidweb/genx/commit/4e9a43675f6de0ba0cc4235c84f0e541bcc0a673))
+
 ## [1.0.1](https://github.com/druidweb/genx/compare/v1.0.0...v1.0.1) (2026-01-26)
 
 
